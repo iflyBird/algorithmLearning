@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # labels=iris.target
 
     # MINST数据集
-    raw_data = pd.read_csv('bank-full.csv', header=0)  # 读取csv数据，并将第一行视为表头，返回DataFrame类型
+    raw_data = pd.read_csv('train_binary.csv', header=0)  # 读取csv数据，并将第一行视为表头，返回DataFrame类型
     data = raw_data.values
     features = data[::, 1::]
     labels = data[::, 0]    # 选取33%数据作为测试集，剩余为训练集
